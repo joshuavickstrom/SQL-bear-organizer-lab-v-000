@@ -38,7 +38,7 @@ end
 
 def selects_most_prominent_color_and_returns_with_count
   <<-SQL
-  select color, count(color) from bears
+  select color, count(color) AS popularity from bears
   SQL
 end
 
