@@ -15,7 +15,7 @@ end
 def selects_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest
   <<-SQL
     select name, age from bears
-    where alive = 0
+    where alive = "true"
     order by age ASC
   SQL
 end
