@@ -39,7 +39,7 @@ end
 def selects_most_prominent_color_and_returns_with_count
   <<-SQL
   select color, count(color) from bears
-  order by color asc
+  order by color 
   limit 1
   SQL
 end
@@ -53,6 +53,6 @@ end
 
 def selects_bear_that_killed_Tim
   <<-SQL
-  select name where name = NULL
+  select temperament where temperament = "aggressive"
   SQL
 end
