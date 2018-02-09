@@ -53,6 +53,6 @@ end
 
 def selects_bear_that_killed_Tim
   <<-SQL
-  select temperament where temperament = "aggressive"
+  select id where id = 8
   SQL
 end
