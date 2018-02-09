@@ -42,7 +42,7 @@ def selects_most_prominent_color_and_returns_with_count
   from bears
   group by colors
   order by count desc
-  limit 1;
+  limit 1
   SQL
 end
 
