@@ -22,7 +22,7 @@ end
 
 def selects_oldest_bear_and_returns_name_and_age
   <<-SQL
-    select name max(age) from bears
+    select max(age) from bears
   SQL
 end
 
