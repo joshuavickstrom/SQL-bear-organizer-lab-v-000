@@ -44,12 +44,12 @@ end
 
 def counts_number_of_bears_with_goofy_temperaments
   <<-SQL
-
+  select
   SQL
 end
 
 def selects_bear_that_killed_Tim
   <<-SQL
-
+  select name where name = NULL
   SQL
 end
