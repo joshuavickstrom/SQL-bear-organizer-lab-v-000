@@ -38,7 +38,7 @@ end
 
 def selects_most_prominent_color_and_returns_with_count
   <<-SQL
-
+  select count(color) from bears
   SQL
 end
 
