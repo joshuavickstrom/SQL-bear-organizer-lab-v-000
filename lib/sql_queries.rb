@@ -38,11 +38,12 @@ end
 
 def selects_most_prominent_color_and_returns_with_count
   <<-SQL
-  select color, count(color) from bears
-  order by color
-  limit 1
+  select colors.name, count(colors.name) as count
+  from bears
+  group by colors.name
+  order by count desc
+  limit 1;
   SQL
-end
 
 def counts_number_of_bears_with_goofy_temperaments
   <<-SQL
