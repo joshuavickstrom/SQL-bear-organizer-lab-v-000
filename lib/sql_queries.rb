@@ -38,9 +38,8 @@ end
 
 def selects_most_prominent_color_and_returns_with_count
   <<-SQL
-  select colors count(colors) as count
+  select colors count(colors)
   from bears
-  group by colors
   order by count desc
   limit 1
   SQL
