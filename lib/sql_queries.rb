@@ -46,7 +46,7 @@ end
 
 def counts_number_of_bears_with_goofy_temperaments
   <<-SQL
-  select temperament, count(temperament) from bears
+  select count(temperament) from bears
   where temperament = "goofy"
   SQL
 end
