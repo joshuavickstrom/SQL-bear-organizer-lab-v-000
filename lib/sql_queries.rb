@@ -1,5 +1,5 @@
 def selects_all_female_bears_return_name_and_age
-  "SELECT MAX(age) FROM bears WHILE gender = 'F';"
+  "SELECT gender WHILE gender = 'F', COUNT(gender) FROM bears GROUP BY gender;"
 end
 
 def selects_all_bears_names_and_orders_in_alphabetical_order
