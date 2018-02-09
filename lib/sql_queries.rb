@@ -22,8 +22,8 @@ end
 
 def selects_oldest_bear_and_returns_name_and_age
   <<-SQL
-    select * from bears
-    order by age ASC
+    select max(age) from bears
+    order by age DESC
     limit 1
   SQL
 end
