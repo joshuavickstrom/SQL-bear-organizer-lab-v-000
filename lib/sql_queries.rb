@@ -30,7 +30,9 @@ end
 
 def select_youngest_bear_and_returns_name_and_age
   <<-SQL
-
+  select name, min(age) from bears
+  order by name DESC
+  limit 1
   SQL
 end
 
