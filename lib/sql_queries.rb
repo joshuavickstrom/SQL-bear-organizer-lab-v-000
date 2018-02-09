@@ -53,7 +53,7 @@ end
 
 def selects_bear_that_killed_Tim
   <<-SQL
-  select id from bears
+  select id, name, age, gender, color, temperament, alive from bears
   where id = 8
   SQL
 end
